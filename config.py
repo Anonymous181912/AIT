@@ -4,12 +4,13 @@ Configuration file for Deepfake Detection System
 import os
 
 # Paths
-DATASET_DIR = "dataset"  # Main dataset directory: dataset/real/ and dataset/fake/
-DATA_DIR = "data"  # Legacy support
-TRAIN_DIR = os.path.join(DATA_DIR, "train")
-TEST_DIR = os.path.join(DATA_DIR, "test")
+DATA_DIR = "data"
+# Paths
+TRAIN_DIR = "train"
+TEST_DIR  = "test"
 MODEL_DIR = "models"
 RESULTS_DIR = "results"
+
 
 # Image processing
 IMAGE_SIZE = (256, 256)
@@ -31,10 +32,9 @@ BATCH_SIZE = 32
 NUM_EPOCHS = 50
 
 # Training
-DEVICE = "cpu"  # Default to CPU for foolproof training
-NUM_WORKERS = 0  # Set to 0 for Windows compatibility and simplicity
+DEVICE = "cuda" if os.path.exists("/proc/driver/nvidia") else "cpu"
+NUM_WORKERS = 4
 SAVE_INTERVAL = 5
-TRAIN_VAL_SPLIT = 0.8  # 80% train, 20% validation if no separate test set
 
 # Feature weights for ensemble
 BACKGROUND_WEIGHT = 0.6
