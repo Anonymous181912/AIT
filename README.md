@@ -208,9 +208,9 @@ If you use this system in your research, please cite:
 ```bibtex
 @software{deepfake_detection_2024,
   title={Background-Level Authenticity Verification for Deepfake Detection},
-  author={Your Name},
+  author={Tanmay},
   year={2024},
-  url={https://github.com/yourusername/deepfake-detection}
+  url={https://github.com/Anonymous181912/AIT}
 }
 ```
 
