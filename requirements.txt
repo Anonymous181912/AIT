@@ -1,0 +1,40 @@
+# Core ML frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Image processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+scikit-image>=0.21.0
+
+# Machine learning utilities
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Data processing
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# Metadata extraction
+exifread>=3.0.0
+piexif>=1.1.3
+
+# HTTP requests (for auto-download)
+requests>=2.31.0
+
+# Face detection (OPTIONAL - for Python < 3.13)
+# facenet-pytorch>=2.5.0     # MTCNN - best accuracy
+# mediapipe>=0.10.0          # MediaPipe - fast
+
+# EfficientNet models (OPTIONAL)
+# timm>=0.9.0                # For EfficientNet backbone
+
+# Note: On Python 3.13, face detection falls back to OpenCV Haar Cascade
+# which is built into opencv-python and works without additional dependencies.
